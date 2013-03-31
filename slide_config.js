@@ -3,7 +3,7 @@ var SLIDE_CONFIG = {
   settings: {
     title: 'Bound',
     subtitle: 'Combinators for manipulating<br>locally-nameless generalized de Bruijn terms',
-    eventTitle: 'ekmett 勉強会',
+    eventTitle: 'ekmett勉強会',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
     enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.
