@@ -36,6 +36,57 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
   </slide>
 
+  <slide>
+    <hgroup>
+      <h2>Summary</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>The library provides convenient combinators for working with "locally-nameless" terms.</li>
+        <li>With generalized de Bruijn term
+          <ul>
+            <li>you can lift whole trees instead of just applying succ to individual variables.</li>
+            <li>higher rank types isn't necessary by using a monad transformer.</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>De Bruijn Index</h2>
+    </hgroup>
+    <article>
+      <p>the De Bruijn index is a notation for representing terms in the λ calculus with the purpose of eliminating the names of the variable from the notation.</p>
+      <p>λz. (λy. y (λx. x)) (λx. z x) is</p>
+      <p><img src="images/De_Bruijn_index_illustration_1.svg"></p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>References</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li><a href="https://github.com/ekmett/bound">ekmett/bound · GitHub</a></li>
+        <li><a href="http://hackage.haskell.org/package/bound">HackageDB: bound-0.7</a></li>
+        <li>Richard Bird and Ross Patterson's <a href="http://www.cs.uwyo.edu/~jlc/courses/5000_fall_08/debruijn_as_nested_datatype.pdf">de Bruijn notation as a nested data type</a></li>
+        <li>Conor McBride and James McKinna's <a href="http://www.cs.st-andrews.ac.uk/~james/RESEARCH/notanum.pdf">I am not a number: I am a free variable</a></li>
+        <li><a href="https://github.com/runarorama/scala-bound">runarorama/scala-bound · GitHub</a></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Go to the <a href="http://www.slideshare.net/ekmett/bound-making-de-bruijn-succ-less">Edward Kmett's slides</a></h2>
+    </hgroup>
+    <article>
+    </article>
+  </slide>
+
   <slide class="thank-you-slide segue nobackground">
     <aside class="gdbar right"><img src="images/200px-Haskell-Logo.svg.png"></aside>
     <article class="flexbox vleft auto-fadein">
